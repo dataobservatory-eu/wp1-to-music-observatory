@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Antal, Dániel">
+<meta name="dcterms.date" content="2025-11-03">
+
+<title>d12_table2 – OpenMusE Structural Business Statistics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">OpenMusE Structural Business Statistics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.qmd"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">about.qmd</span>
+    </span>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose-of-data-generation-in-relation-to-the-project-no-update-on-dataset-level" id="toc-purpose-of-data-generation-in-relation-to-the-project-no-update-on-dataset-level" class="nav-link active" data-scroll-target="#purpose-of-data-generation-in-relation-to-the-project-no-update-on-dataset-level">1.1 Purpose of data generation in relation to the project (NO UPDATE ON DATASET LEVEL)</a></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a>
+  <ul class="collapse">
+  <li><a href="#structural-business-statistics-openmuse" id="toc-structural-business-statistics-openmuse" class="nav-link" data-scroll-target="#structural-business-statistics-openmuse">Structural Business Statistics (OpenMusE)</a></li>
+  </ul></li>
+  <li><a href="#open-policy-analysis-guidelines" id="toc-open-policy-analysis-guidelines" class="nav-link" data-scroll-target="#open-policy-analysis-guidelines">Open Policy Analysis Guidelines</a></li>
+  <li><a href="#pillar1" id="toc-pillar1" class="nav-link" data-scroll-target="#pillar1">1.4.1 Data Summary: Music Economy</a>
+  <ul class="collapse">
+  <li><a href="#size" id="toc-size" class="nav-link" data-scroll-target="#size">Size</a></li>
+  </ul></li>
+  <li><a href="#wp5" id="toc-wp5" class="nav-link" data-scroll-target="#wp5">1.5 Data Dissemination: Observatory</a></li>
+  <li><a href="#data-reuse-not-on-dataset-level" id="toc-data-reuse-not-on-dataset-level" class="nav-link" data-scroll-target="#data-reuse-not-on-dataset-level">1.6 Data Reuse (NOT ON DATASET LEVEL)</a></li>
+  <li><a href="#FAIR-data" id="toc-FAIR-data" class="nav-link" data-scroll-target="#FAIR-data">2. FAIR data (NOT ON DATASET LEVEL)</a>
+  <ul class="collapse">
+  <li><a href="#making-data-findable-including-provisions-for-metadata" id="toc-making-data-findable-including-provisions-for-metadata" class="nav-link" data-scroll-target="#making-data-findable-including-provisions-for-metadata">2.1 Making data findable, including provisions for metadata</a>
+  <ul class="collapse">
+  <li><a href="#use-of-persistent-identifiers" id="toc-use-of-persistent-identifiers" class="nav-link" data-scroll-target="#use-of-persistent-identifiers">2.1.1 Use of persistent identifiers</a></li>
+  <li><a href="#rich-metadata-for-discovery" id="toc-rich-metadata-for-discovery" class="nav-link" data-scroll-target="#rich-metadata-for-discovery">2.1.2 Rich metadata for discovery</a></li>
+  <li><a href="#search-keywords" id="toc-search-keywords" class="nav-link" data-scroll-target="#search-keywords">2.1.3 Search keywords</a></li>
+  <li><a href="#machine-actionable-metadata" id="toc-machine-actionable-metadata" class="nav-link" data-scroll-target="#machine-actionable-metadata">2.1.4 Machine actionable metadata</a></li>
+  </ul></li>
+  <li><a href="#making-data-accessible" id="toc-making-data-accessible" class="nav-link" data-scroll-target="#making-data-accessible">2.2 Making Data Accessible</a>
+  <ul class="collapse">
+  <li><a href="#repostories" id="toc-repostories" class="nav-link" data-scroll-target="#repostories">2.2.1 Repostories</a></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata">2.2.3 Metadata</a></li>
+  </ul></li>
+  <li><a href="#making-data-interoperable" id="toc-making-data-interoperable" class="nav-link" data-scroll-target="#making-data-interoperable">2.3. Making Data Interoperable</a>
+  <ul class="collapse">
+  <li><a href="#commonly-used-ontologies-vocabularies-and-data-models" id="toc-commonly-used-ontologies-vocabularies-and-data-models" class="nav-link" data-scroll-target="#commonly-used-ontologies-vocabularies-and-data-models">2.3.1 Commonly used ontologies, vocabularies, and data models</a></li>
+  <li><a href="#qualified-references" id="toc-qualified-references" class="nav-link" data-scroll-target="#qualified-references">2.3.2 Qualified references</a></li>
+  <li><a href="#data-exchange-and-reuse-across-disciplines" id="toc-data-exchange-and-reuse-across-disciplines" class="nav-link" data-scroll-target="#data-exchange-and-reuse-across-disciplines">2.3.3 Data exchange and reuse across disciplines</a></li>
+  <li><a href="#data-exchange-in-the-music-sector" id="toc-data-exchange-in-the-music-sector" class="nav-link" data-scroll-target="#data-exchange-in-the-music-sector">2.3.4 Data exchange in the music sector</a></li>
+  </ul></li>
+  <li><a href="#increase-data-reuse" id="toc-increase-data-reuse" class="nav-link" data-scroll-target="#increase-data-reuse">2.4 Increase data reuse</a>
+  <ul class="collapse">
+  <li><a href="#documentation-standards" id="toc-documentation-standards" class="nav-link" data-scroll-target="#documentation-standards">2.4.1 Documentation standards</a></li>
+  <li><a href="#good-data-semantics" id="toc-good-data-semantics" class="nav-link" data-scroll-target="#good-data-semantics">2.4.2 Good data semantics</a></li>
+  <li><a href="#api-access" id="toc-api-access" class="nav-link" data-scroll-target="#api-access">2.4.3 API access</a></li>
+  <li><a href="#data-licensing" id="toc-data-licensing" class="nav-link" data-scroll-target="#data-licensing">2.4.4 Data licensing</a></li>
+  <li><a href="#other-data" id="toc-other-data" class="nav-link" data-scroll-target="#other-data">2.4.5 Other data</a></li>
+  </ul></li>
+  <li><a href="#quality" id="toc-quality" class="nav-link" data-scroll-target="#quality">2.5 Quality Assurance</a>
+  <ul class="collapse">
+  <li><a href="#eurostat-indicator-design-principles" id="toc-eurostat-indicator-design-principles" class="nav-link" data-scroll-target="#eurostat-indicator-design-principles">2.5.1 Eurostat indicator design principles</a></li>
+  <li><a href="#reproducible-research" id="toc-reproducible-research" class="nav-link" data-scroll-target="#reproducible-research">Reproducible research</a></li>
+  <li><a href="#internal-peer-review" id="toc-internal-peer-review" class="nav-link" data-scroll-target="#internal-peer-review">Internal peer review</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#allocation-of-resources-not-applicable-on-dataset-level" id="toc-allocation-of-resources-not-applicable-on-dataset-level" class="nav-link" data-scroll-target="#allocation-of-resources-not-applicable-on-dataset-level">3. Allocation of resources (NOT APPLICABLE ON DATASET LEVEL)</a></li>
+  <li><a href="#data-security" id="toc-data-security" class="nav-link" data-scroll-target="#data-security">4. Data security</a></li>
+  <li><a href="#ethics" id="toc-ethics" class="nav-link" data-scroll-target="#ethics">5. Ethics</a></li>
+  <li><a href="#data-catalogue" id="toc-data-catalogue" class="nav-link" data-scroll-target="#data-catalogue">Data Catalogue</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="D12_table2.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="D12_table2.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Antal, Dániel <a href="https://orcid.org/0000-0001-7513-6760" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 3, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="purpose-of-data-generation-in-relation-to-the-project-no-update-on-dataset-level" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-of-data-generation-in-relation-to-the-project-no-update-on-dataset-level">1.1 Purpose of data generation in relation to the project (NO UPDATE ON DATASET LEVEL)</h2>
+<p>The Open Music Europe Project itself can be seen as a data management project. In other words, the Data Management Plan is not only aiming at making the data generated or reused by the project further findable, accessible and reusable in an interoperable way, but data generation is a central aim of the grant. Our <em>Grant Agreement</em> and the project used the data gap analysis of the <em>Feasibility study for the establishment of a European Music Observatory</em>. This data gap analysis is dated and does not contain strictly defined data management instructions or a concise definition. We treat it as a starting point.</p>
+<p>The three main objectives of the project are:</p>
+<ul>
+<li><p><strong>O1 identify European music data gaps</strong>; T1.1, T2.1, T3.1 and T4.1 will suggest ways how to fill the data gaps identified before Open Music Europe and discover since and offers stakeholders consultation on them.</p></li>
+<li><p><strong>O2 bridge these gaps</strong> by re-processing or collecting raw data and generating new data assets. T1.2, T2.2, T3.2, T4.2 tasks will acquire (collect or reuse) raw data that can form the basis of business or policy indicators or other research inputs in a processed form.</p></li>
+<li><p><strong>O3 empowers the European music ecosystem’s stakeholders</strong> to use the data to solve important business, research, or evidence-based policy problems. This is the role of T1.3, T2.3, T3.3, T4.3.</p></li>
+<li><p>The <strong>Open Music Observatory will disseminate these data assets</strong> so that they are added with new, FAIR features to the Digital Music Observatory minimum viable product (MVP.) In this regard, the projects’ dissemination and data management plans are harmonised.</p></li>
+</ul>
+<p>The subsequent subchapters of the <strong>Data Summary</strong> do not present the data in the functional breakup of the Grant Agreement but according to the subdomains or the “pillars” of the EMO Feasibility Study.</p>
+<ul>
+<li><a href="#pillar1">Data Summary: Music Economy</a> presents the data management of T1.1 (objective 1), T1.2 (objective 2), T1.3 (objective 3).</li>
+</ul>
+<p>Apart from this <code>Data Management Plan</code>, or <code>DMP</code>, the project has a <code>Dissemination, Communication and Exploitation Plan</code> (<code>DCE Plan</code>). Because data management is not an auxiliary activity of this project, but the main project objectives are aiming at the generation of new data in terms of the dissemination and exploitation of data assets and the live policy documents (which empower the stakeholders to use the new data assets functionally), the DCE Plan and the <code>DMP</code> are coordinated.</p>
+<p>The main aim of the <code>DMP</code> is to inform potential users of the commonly understood data in the forms of datasets, datacubes, and databases of Open Music Europe visible via metadata and, whenever possible, with data catalogues and disseminated data. As required, we also make provisions for “other data”, i.e.&nbsp;visualisation files, texts, blog posts, and more complex documents in lesser detail, as their access and use require less management information because their dissemination and communication are the focus of the Dissemination, Communication and Exploitation Plan. See <a href="#wp5">1.5 Data Dissemination: Open Music Observatory</a> for further details.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Purpose of data generation in relation to the project
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The most relevant project actions are:</p>
+<ul>
+<li><p>Develop policy-relevant indicators for the total economic value of music (WP1)</p></li>
+<li><p>Develop new survey methods for capturing scarce data</p></li>
+<li><p>“Provide methodologies for capturing the economic and societal value of music”</p></li>
+</ul>
+</div>
+</div>
+<p>Apart from this, as data management is a primary activity of the project, it has a project action <em>Develop new software for rendering fragmented, hidden, and unharmonised/unprocessed data usable</em> that has a supporting role in data collection and data generation.</p>
+<p>The <code>Open Music Europe Data Management Plan</code> follows the <em>Horizon Europe Data Management Plan Template, Version 1</em> <span class="citation" data-cites="openaire_horizon_2021">(<a href="#ref-openaire_horizon_2021" role="doc-biblioref">OpenAire 2021</a>)</span>.</p>
+</section>
+<section id="datasets" class="level2">
+<h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
+<p>In statistical datasets, each observation and component—dimensions, measures, and attributes—is defined with multilingual labels and semantic mappings:</p>
+<ul>
+<li><code>wd:P140</code> (dimension) ↔︎ <code>qb:DimensionProperty</code></li>
+<li><code>wd:P141</code> (measure) ↔︎ <code>qb:MeasureProperty</code></li>
+<li><code>wd:P142</code> (attribute) ↔︎ <code>qb:AttributeProperty</code></li>
+<li><code>wd:P146</code> (has code list) ↔︎ <code>sdmx:codeList</code></li>
+</ul>
+<section id="structural-business-statistics-openmuse" class="level3">
+<h3 class="anchored" data-anchor-id="structural-business-statistics-openmuse">Structural Business Statistics (OpenMusE)</h3>
+<p>The <em>Structural Business Statistics (OpenMuse)</em> (<a href="https://reprexbase.eu/openmusic/Item:Q600">Q600</a>) datacube is derived from the Eurostat <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_SC_OVW/">Enterprise statistics by size class and NACE Rev.&nbsp;2 activity (from 2021 onwards)</a> datacube with filtering out relevant industries, and establishing the total number of enterprises and their total turnover.</p>
+<p>It contains two indicators: <a href="https://reprexbase.eu/openmusic/Item:Q605">number of enterprises</a> and <a href="https://reprexbase.eu/openmusic/Item:Q604">net turnover of enterprises in million euros</a>, aggregated according to two approximate definitions of the music industry. The <em>CICERONE</em> flag marks observations that fall within the minimum or expanded NACE ranges defined in the CICERONE project, while the other (the <em>OpenMusE SBS</em> flag) marks observations belonging to the core or extended music-sector definitions developed in OpenMusE. These flags enable consistent extraction, comparison, and modelling of music-related economic activity across otherwise incompatible datasets.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This part is for illustration only, and does not need repetition in the DMP.</p>
+<p>The dataset <a href="https://reprexbase.eu/openmusic/Special:EntityData/Q600.ttl">Q600.ttl</a> (also available as <a href="https://reprexbase.eu/openmusic/Special:EntityData/Q600.nt">Q600.nt</a>, <a href="https://reprexbase.eu/openmusic/Special:EntityData/Q600.jsonld">Q600.jsonld</a>, <a href="https://reprexbase.eu/openmusic/Special:EntityData/Q600.json">Q600.json</a>, and <a href="https://reprexbase.eu/openmusic/Special:EntityData/Q600.rdf">Q600.rdf</a> in XML) represents a machine-readable model of the Eurostat table <em>“</em> <em>Structural Business Statistics (OpenMuse)</em> <em>”</em>. It was reconstructed in the OpenMusic Wikibase <code>https://reprexbase.eu/openmusic/</code>) to demonstrate alignment between European statistical metadata (SDMX) and linked-data publication formats used in the cultural-heritage domain.</p>
+<p>The dataset uses RDF/Turtle format and aligns Wikibase schema elements (<code>wikibase:Item</code>, <code>wikibase:Property</code>) with W3C and SDMX standards. Dataset-level metadata (<code>schema:Dataset</code>) record provenance (<code>prov:wasDerivedFrom</code>, <code>dct:source</code>) and licensing (CC0 1.0).</p>
+<p>These alignments allow full interoperability between Eurostat’s SDMX-based dissemination and linked-data environments such as the EU Open Data Portal.</p>
+</div>
+</div>
+<p>The dimensions of the dataset:</p>
+<ul>
+<li><p><a href="https://reprexbase.eu/openmusic/Item:Q599">NACE economic activity (dimension)</a></p></li>
+<li><p><a href="https://reprexbase.eu/openmusic/Item:Q472" title="Item:Q472">time (dataset dimension)</a> <em>currently not added, but it would be absolutely essential</em></p></li>
+<li><p><a href="https://reprexbase.eu/openmusic/Item:Q467" title="Item:Q467">geopolitical entity (dimension)</a> <em>not present now but would be absolutely necessary</em></p></li>
+</ul>
+<p>The measured variables of the datacube:</p>
+<ul>
+<li><a href="https://reprexbase.eu/openmusic/Item:Q605">number of enterprises</a></li>
+<li><a href="https://reprexbase.eu/openmusic/Item:Q604">net turnover of enterprises in million euros</a>,</li>
+</ul>
+<p>The attributes of the dataset: <em>These are currently not recorded, but it would be a very good practice, and they are present in the data that you retrieve from Eurostat</em>,</p>
+<ul>
+<li><p><a href="https://reprexbase.eu/openmusic/Item:Q469" title="Item:Q469">unit of measure (attribute)</a> (not present now)</p></li>
+<li><p><a href="https://reprexbase.eu/openmusic/Item:Q470" title="Item:Q470">frequency (attribute)</a> (not present now)</p></li>
+<li><p><a href="https://reprexbase.eu/openmusic/Item:Q602">OpenMusE SBS music-sector flag</a></p></li>
+<li><p><a href="https://reprexbase.eu/openmusic/Item:Q602">CICERONE music classification flag</a></p></li>
+</ul>
+<p>The dataset is openly available for reuse and serves as a model for FAIR statistical data integration in the cultural and creative domains.</p>
+<p><strong>Purpose and context</strong></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Economics summary
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You should describe here in one paragraph what this indicator can be used for and what not. It would need a word of caution: this is created with retroactive filtering, not with collecting the raw data from music organisations.</p>
+</div>
+</div>
+<p><strong>Data types and formats<br>
+</strong>The metadata are provided as <strong>RDF triples</strong> (Turtle <code>.ttl</code>), optionally serialised as JSON-LD, N-Triples, and RDF/XML. All identifiers resolve to dereferenceable HTTP URIs under <a href="https://reprexbase.eu/openmusic/Special:EntityData/" class="uri">https://reprexbase.eu/openmusic/Special:EntityData/</a>, for example: <a href="https://reprexbase.eu/openmusic/Special:EntityData/Q600" class="uri">https://reprexbase.eu/openmusic/Special:EntityData/Q600</a>. Each dataset entity includes an access point (<code>om:P130</code>, <em>has access point</em>) linking to a DOI that resolves to the corresponding Eurostat dataset page, where users can download subsets of the data cube in multiple formats.</p>
+</section>
+</section>
+<section id="open-policy-analysis-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="open-policy-analysis-guidelines">Open Policy Analysis Guidelines</h2>
+<p>Our Consortium pledged to follow the Open Policy Guidelines (Level 3). <span class="citation" data-cites="opa_guidelines OPA_guardia_et_al_2020">(<a href="#ref-opa_guidelines" role="doc-biblioref">BITSS 2019</a>; <a href="#ref-OPA_guardia_et_al_2020" role="doc-biblioref">Hoces de la Guardia, Grant, and Miguel 2020</a>)</span>. Within the Horizon Europe research framework programme, some open science practices are mandatory for all beneficiaries per the grant agreement, including using the FAIR principles <span class="citation" data-cites="horizon_europe_guide_2023">(<a href="#ref-horizon_europe_guide_2023" role="doc-biblioref">European Commission 2023, p43</a>)</span>. Compliance with the FAIR principles is laid out in Parts 2-5.</p>
+<div class="{callout-tip}">
+<p>According to the Horizon Europe Programme Guidelines, recommended practices “… are open science practices beyond the mandatory ones, such as involving all relevant knowledge actors, including citizens, early and open sharing of research, output management beyond research data, open peer-review. This is a non-exhaustive list of practices that proposers are expected to adopt when possible and appropriate for their projects. Finally, certain work programme topics or call conditions may encourage specific additional open science practices.”</p>
+<p>In <em>Open Music Europe</em>, we chose to comply with such an additional standard, the <em>Open Policy Analysis Guidelines</em> <span class="citation" data-cites="OPA_guardia_et_al_2020">(<a href="#ref-OPA_guardia_et_al_2020" role="doc-biblioref">Hoces de la Guardia, Grant, and Miguel 2020</a>)</span>, which are a practical standard intended to one of our core target groups: cultural policymakers.</p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Open Policy Analysis Guidelines
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>OPA 4: Share raw (or analytic) data and materials in a way that the analysis is reproducible with minimal effort. Level 3: Analytic and raw data are made available through a trusted repository. Detailed instructions are provided for accessing raw data that is proprietary or contains sensitive information.</p></li>
+<li><p>OPA 6: 6 standardise the file structure so that materials are organized in a way that is accessible to an informed reader. All project components are organized in a selfcontained folder using a Standard File Structure (SFS), and a readme file is included.</p></li>
+<li><p>OPA 9: Level 3: All team members use version control software and track changes in a shared project repository.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p>The <a href="https://github.com/dataobservatory-eu/wp1-to-music-observatory">wp1-to-music-observatory</a> contains the reproducible code and the raw values of the tables for the <em>Structural Business Statistics (OpenMuse)</em> (<a href="https://reprexbase.eu/openmusic/Item:Q600">Q600</a>) [… continue here] datacube following the standards of the R statistical environment and language.</p>
+<p>The <code>data-raw</code> folder contains downloaded raw data.</p>
+<p>The <code>data</code> folder contains publication ready data. The <code>documentation</code> folder contains the documentation.</p>
+<p>The <code>bib</code> folder contains the bibliographical files (original data sources, metadata definitions, and reports and publications that use the data.)</p>
+<p>The <code>R</code> folder contains R scripts to produce the data tables.</p>
+<p>This information can be found on the README page of the repository folder.</p>
+</section>
+<section id="pillar1" class="level2">
+<h2 class="anchored" data-anchor-id="pillar1">1.4.1 Data Summary: Music Economy</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Data Generated &amp; Reused: Music Economy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The expected outcome of <strong>Objective 1 MAP the policy and data landscape</strong> is to “develop policy-relevant indicators for the total economic value of music.” The indicator development guidelines of Eurostat (see <em>2.5 Quality Assurance</em>) will be used for the general methodology.</p>
+<p>WP1 will provide indicators capable of capturing the full economic value of music, including zero-price uses. For this, existing data gaps are identified, analysed and filled. i.e., currently “hidden” data will be reported, MSMEs that currently do not provide data are integrated, zero-price use is measured, etc. Furthermore, methods to effectively act on this data are demonstrated. A pilot study demonstrates exemplary how improved data collection on the value of music can be leveraged to improve artist revenues.</p>
+<p>Examples of potential indicator candidates developed in WP1 include (but are not limited to): Employment; the value of EU’s music sector; structure of the market; impact of the not-for-profit sector on the overall economy of the music sector; Neighbouring rights; Music publishing; Independent music companies; Live music; Export music; Music retail or in-store public performance; Financing of the music sector; Live music regulation; Copyright regulations and evolution of copyright regimes; etc.</p>
+<p>WP1 will provide indicators capable of capturing the full economic value of music, including zero-price uses. For this, existing data gaps are identified, analysed and filled. i.e., currently “hidden” data will be reported, MSMEs that currently do not provide data are integrated, zero-price use is measured, etc. Furthermore, methods to effectively act on this data are demonstrated. A pilot study demonstrates exemplary how improved data collection on the value of music can be leveraged to improve artist revenues.</p>
+<p>Examples of potential indicator candidates developed in WP1 include (but are not limited to): Employment; Value of EU’s music sector; Structure of the market; The impact of the not-for-profit sector on the overall economy of the music sector; Neighbouring rights; Music publishing; Independent music companies; Live music; Export music; Music retail or in-store public performance; Financing of the music sector; Live music regulation; Copyright regulations and evolution of copyright regimes; etc.</p>
+</div>
+</div>
+<section id="reuse-collection" class="level4">
+<h4 class="anchored" data-anchor-id="reuse-collection">Reuse &amp; collection</h4>
+<p>The dataset is part of the <a href="https://reprexbase.eu/openmusic/Item:Q585">Music Economy Pillar</a> of the Open Music Observatory.</p>
+</section>
+<section id="data-generation" class="level4">
+<h4 class="anchored" data-anchor-id="data-generation">Data generation</h4>
+<p>The data is generated by the <code>TABLE_2_3_4_REPLICATION.R</code> script that can be found in the <code>R</code> library of the OPA folder.</p>
+</section>
+<section id="size" class="level3">
+<h3 class="anchored" data-anchor-id="size">Size</h3>
+<p><code>t3_by_nace</code> contains 24x6 cells of data with an approximate size of 0.9 KiB in CSV serialisation.</p>
+</section>
+</section>
+<section id="wp5" class="level2">
+<h2 class="anchored" data-anchor-id="wp5">1.5 Data Dissemination: Observatory</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dissemination plan
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Once the table is finalised, it will be placed on the Open Muisc Observatory interactive browswer, the EU Open Data Portal and Zenodo.</p>
+</div>
+</div>
+</section>
+<section id="data-reuse-not-on-dataset-level" class="level2">
+<h2 class="anchored" data-anchor-id="data-reuse-not-on-dataset-level">1.6 Data Reuse (NOT ON DATASET LEVEL)</h2>
+<p>This is a summary table; for further details, see the following chapters of the <code>DMP</code>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Most the the data below needs no update, only the OPA folders need to be linked. This is not a dataset but DMP level</p>
+</div>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Data types</th>
+<th>Collecting</th>
+<th>Storage</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>survey mircodata datasets</td>
+<td><p>Collected by SINUS and REPREX.</p>
+<p>Reused under the Open Data Directive.</p></td>
+<td><p>Sensitive data is stored by collecting entity.</p>
+<p>Statistical microdata on GitHub repositories (temporary) and Zenodo (long-term)</p></td>
+<td><p>No access to sensitive microdata.</p>
+<p>Non-identifiable datasets will be free to reuse with open data license.</p>
+<p>reused data will be made further reusable on similar terms we receive them.</p></td>
+</tr>
+<tr class="even">
+<td>administrative records</td>
+<td><p>ALOADED, ARTISJUS, SOZA, MUSICAUTOR and third party administrative records.</p>
+<p>Processed by Consortium members.</p></td>
+<td><p>Sensitive data is stored by collecting entity.</p>
+<p>Non-sensitive and limited subsets from M17 in Digital Music Observatory as linked open data.</p></td>
+<td><p>No access to sensitive microdata.</p>
+<p>Limited access to microdata with data linking. Linking is possible with individual licenses.</p></td>
+</tr>
+<tr class="odd">
+<td>statistical and indicator datasets</td>
+<td><p>Reused from various open government sources.</p>
+<p>Processed from Consortium member microdata by Consoritum.</p></td>
+<td><p><a href="https://github.com/dataobservatory-eu/wp1-to-music-observatory">Temporary access on GitHub</a> (pre-processed and not human-controlled.)</p>
+<p><a href="https://zenodo.org/communities/music_observatory/records?q=&amp;l=list&amp;p=1&amp;s=10">Open Music Observatory on Zenodo</a></p>
+<p>From M17 in Digital Music Observatory API.</p></td>
+<td>Released as open data.</td>
+</tr>
+<tr class="even">
+<td>data visualisations</td>
+<td>Created by members of the Consortium or Consortium.</td>
+<td>FigShare open science repository.</td>
+<td>CC-BY license.</td>
+</tr>
+<tr class="odd">
+<td>software code</td>
+<td>UTU, REPREX in open collaboration with qualifying volunteers.</td>
+<td><p>GitHub (development versions)</p>
+<p>Comprehensive R Archive Network (CRAN) peer-reviewed releases.</p>
+<p>Zenodo (development and peer-reviewed releases.)</p></td>
+<td>Free access, with open source license statement for each software.</td>
+</tr>
+<tr class="even">
+<td>statistical processing code</td>
+<td>UTU, REPREX in collaboration with microdata owners.</td>
+<td><a href="https://github.com/dataobservatory-eu/wp1-to-music-observatory">GitHub</a><br>
+</td>
+<td><p>Whenever possible, released as software.</p>
+<p>Redactions are possible for data security purposes.</p></td>
+</tr>
+<tr class="odd">
+<td>documents</td>
+<td>Open Music Europe Consortium and its members</td>
+<td><p>GitHub (see references)</p>
+<p>Final versions on Zenodo (and in journals)</p>
+<p>This is the example</p></td>
+<td>Free access for non-commercial use.</td>
+</tr>
+<tr class="even">
+<td>blogpost documents</td>
+<td>Open Music Europe Consortium and its members</td>
+<td>Link to your blogpost, add to Bib file.</td>
+<td>CC-BY license</td>
+</tr>
+<tr class="odd">
+<td>live policy documents</td>
+<td>Open Music Europe Consortium and its members</td>
+<td>Digital Music Observatory web resource</td>
+<td>Complex document, parts (data, visualisation, text, code) under various CC licenses and open source licenses.</td>
+</tr>
+<tr class="even">
+<td>metadata</td>
+<td>Open Music Europe Consortium and its members</td>
+<td>See details of <code>DMP</code>.</td>
+<td>CC0</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="FAIR-data" class="level1">
+<h1>2. FAIR data (NOT ON DATASET LEVEL)</h1>
+<section id="making-data-findable-including-provisions-for-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="making-data-findable-including-provisions-for-metadata">2.1 Making data findable, including provisions for metadata</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Making data findable
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Will data be identified by a persistent identifier?</p></li>
+<li><p>Will rich metadata be provided to allow discovery? What metadata will be created? What disciplinary or general standards will be followed? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.</p></li>
+<li><p>Will metadata be offered in such a way that it can be harvested and indexed?</p></li>
+</ul>
+</div>
+</div>
+<section id="use-of-persistent-identifiers" class="level3">
+<h3 class="anchored" data-anchor-id="use-of-persistent-identifiers">2.1.1 Use of persistent identifiers</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Making data findable
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Will data be identified by a persistent identifier?</li>
+</ul>
+</div>
+</div>
+<p>Our data collection, processing and incremental addition to our datasets will be a daily activity, and we will use temporary (buffer) and persistent identifiers for all data assets.</p>
+<p><code>ORCiD</code>: ORCID provides a persistent digital identifier (an ORCID iD) that you own and control, and that distinguishes you from every other researcher. We use it to identify contributors to our data assets. <em>Arianna has an ORCiD, it was used to identify her</em></p>
+<p><code>DOI</code>: All our datasets will have a versioned DOI on Zenodo; high-frequency data will have temporary identifiers and will only be periodically released on Zenodo with a new DOI. All our visualizations will have a DOI on FigShare, which is a global open repository particularly designed to make visualizations reusable. When datasets are visualised, then the visualization will be connected to the persistent identifier (DOI) of the dataset. <em>Once published the dataset will have a DOI</em></p>
+<p><code>VIAF</code>: VIAF explores virtually combining the name authority files of national-level authority files into a single name authority service. We use the VIAF ID as a PID. We use it in the creation of diversity indicators, in the original inventory microdata datasets. <em>Only if Arianna has a VIAF cluster ID</em></p>
+<section id="datasets-1" class="level4">
+<h4 class="anchored" data-anchor-id="datasets-1">Datasets</h4>
+</section>
+<section id="visualizations" class="level4">
+<h4 class="anchored" data-anchor-id="visualizations">Visualizations</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png/Music_value_chain.png" class="img-fluid figure-img"></p>
+<figcaption>PID for Visualizations: All our visualisations will have a DOI on FigShare</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Visualisations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Add info about the visualisations of datasets (they can be uplodaded to FigShare or Zenodo, as with journal article figures)</p>
+</div>
+</div>
+</section>
+<section id="documents" class="level4">
+<h4 class="anchored" data-anchor-id="documents">Documents</h4>
+<p><code>Live policy documents</code>: Live policy documents, as their name suggests, are live updating, often very frequently. Similarly to their (embedded) high-frequency datasets, they will be saved periodically and released on Zenodo with a versioned DOI.</p>
+<p><code>Static documents</code>: Under the current European legislation, all informative files, including text documents fall under the legal definition of data. Their dissemination is defined in the Open Music Europe consortium’s Dissemination, Communication and Exploitation Plan. The <code>DMP</code> relates to the human and machine-actionable release of more structured information that is commonly referred to as ‘data’. To make our data more reusable, all data used in the disseminated static documents will be made available in human and machine-actionable dataset forms and data visualisations.</p>
+</section>
+</section>
+<section id="rich-metadata-for-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="rich-metadata-for-discovery">2.1.2 Rich metadata for discovery</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Making data findable
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Will rich metadata be provided to allow discovery? What metadata will be created? What disciplinary or general standards will be followed? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.</li>
+</ul>
+</div>
+</div>
+<p>All our data will be provided with the mandatory metadata of the <em>DataCite 4.4</em> standard <span class="citation" data-cites="datacite_4_4">(<a href="#ref-datacite_4_4" role="doc-biblioref">DataCite Metadata Working Group 2021</a>)</span>, and in almost all cases, all recommended metadata, too.</p>
+</section>
+<section id="search-keywords" class="level3">
+<h3 class="anchored" data-anchor-id="search-keywords">2.1.3 Search keywords</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Will search keywords be provided in the metadata to optimize the possibility for discovery and then potential re-use?</li>
+</ul>
+</div>
+</div>
+<p>We use the controlled libraries that are supported by Zenodo.</p>
+</section>
+<section id="machine-actionable-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="machine-actionable-metadata">2.1.4 Machine actionable metadata</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Will metadata be offered in such a way that it can be harvested and indexed?</li>
+</ul>
+</div>
+</div>
+<p>Our data management practice is machine-actionable, this means that we will offer metadata in a way that it can be machine-read, harvested and indexed.</p>
+</section>
+</section>
+<section id="making-data-accessible" class="level2">
+<h2 class="anchored" data-anchor-id="making-data-accessible">2.2 Making Data Accessible</h2>
+<p><code>Open Music Europe</code>, as the name of the project suggests, wants to make as much data openly accessible for music businesses, music-related and evidence-based cultural policy and music research as possible. Most of our data in the form of datasets, and other data (i.e.&nbsp;visualizations, texts, complex documents and live policy documents) will be openly accessible unless otherwise stated in this <code>DMP</code>.</p>
+<section id="repostories" class="level3">
+<h3 class="anchored" data-anchor-id="repostories">2.2.1 Repostories</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Will the data be deposited in a trusted repository?</li>
+<li>Have you explored appropriate arrangements with the identified repository where your data will be deposited?</li>
+<li>Does the repository ensure that the data is assigned an identifier? Will the repository resolve the identifier to a digital object?</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Our main, long-term repository for data is Zenodo. The project’s 5.1 deliverable, the Open Music Observatory, had a minimum viable product prototype, the Digital Music Observatory, which has had a community on Zenodo since 2021. <span class="citation" data-cites="digital_music_observatory_zenodo">(<a href="#ref-digital_music_observatory_zenodo" role="doc-biblioref">Digital Music Observatory 2021b</a>)</span></p>
+<p>Our short-term repository, following the Open Policy Analysis Guidelines, provides access and reviewability to our data and inputs from the very early stage (in some cases, regarding documentation, from the proposal phase.) These repositories are stored on GitHub, and their addresses are available in the reference list of this <code>DMP</code> and via our project website.</p>
+<p>Zenodo and GitHub offer continuous integration with each other. GitHub will be used as a working repository to comply with the OPA Level 3 standard, and data assets that are approved for dissemination and communication will be placed onto Zenodo.</p>
+<p>FigShare is a repository aimed at reusable visualisations. While we can also place visualisations on GitHub and Zenodo, FigShare has a visualization-centric global audience. When visualisations can be reused individually, we will place them FigShare, and use FigShare’s DOIs as persistent identifiers. Naturally, when the primary DOI and dissemination point of a dataset and its methodological description is Zenodo and the visualisations’ is FigShare, we will cross-reference these assets. The project’s 5.1 deliverable, the Open Music Observatory, had a minimum viable product prototype, the Digital Music Observatory, which has had a community on Zenodo since 2021. <span class="citation" data-cites="digital_music_observatory_figshare">(<a href="#ref-digital_music_observatory_figshare" role="doc-biblioref">Digital Music Observatory 2021a</a>)</span></p>
+</section>
+<section id="metadata" class="level3">
+<h3 class="anchored" data-anchor-id="metadata">2.2.3 Metadata</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Metadata
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Will metadata be made openly available and licenced under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why. Will metadata contain information to enable the user to access the data?</li>
+<li>How long will the data remain available and findable? Will metadata be guaranteed to remain available after data is no longer available?</li>
+<li>Will documentation or reference about any software be needed to access or read the data be included? Will it be possible to include the relevant software (e.g.&nbsp;in open source code)?</li>
+</ul>
+</div>
+</div>
+</div>
+<p>The metadata of <code>Open Music Europe</code> data will be openly available and in human-readable, reusable, and machine-readable format(s).</p>
+<p>In the first phase of the project (M1-M16), this will be achieved by periodically releasing all data on the Zenodo open science repository in the Digital Music Observatory collection. All data deposited and released in the repository will have metadata available in the following metadata formats: MARCXML, Dublin Core (according to OpenAIRE Guidelines), DataCite, DCAT, and JSON-LD (Schema.org).</p>
+<p>In the second phase of the project, we will start delivering the D5.1 Open Data Observatory, which will provide API access to our data (via SQL queries and in machine-readable JSON format) and provide further machine-readable data catalogues along the aforementioned solution.</p>
+<p>The metadata (and the data) will be deposited on Zenodo, which provides access to the data for the lifetime of the host laboratory CERN, which currently has an experimental programme defined for the next 20 years at least.</p>
+<p>According to the <em>Exploitation Plan</em> of the Open Music Europe Consortium, our plan is to make our Open Music Observatory, as part of a larger Digital Music Observatory, eventually part of the planned European Music Observatory. If this is not feasible, we would like to find an exploitation path that ensures the continuity of the data collection, processing, and dissemination of the project. If successful, then we will not only provide long-term access to the data and the metadata but continue to renew our datasets.</p>
+<p>Almost all data will be provided in a way that it can be used and reused in numerous widely used open sources and licensed software applications. To enhance interoperability, we will always provide data CSV files that conform to the W3C interoperability standard about the release of CSV files with metadata.</p>
+<p>After consulting stakeholders in the target group of our project, we may provide data in different file formats that is more comfortable for our users.</p>
+<p>One of our projects aims is to provide a fully reproducible data-to-policy pipeline and full reproducibility in the R statistical environment and language. The R environment is both open-source and interoperable; it is available on a wide range of operational systems (i.e., various Linux or BSD distributions, including MacOS and various Windows operating systems.) Apart from using the resilient but inefficient CSV format, we will release data in native rdf formats. One of our aims in our Work Package 4 is to create an extension package to the R language (library ecosystem) that ensures an easy reproduction of our data-to-policy pipeline.</p>
+</section>
+</section>
+<section id="making-data-interoperable" class="level2">
+<h2 class="anchored" data-anchor-id="making-data-interoperable">2.3. Making Data Interoperable</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>What data and metadata vocabularies, standards, formats or methodologies will you follow to make your data interoperable to allow data exchange and reuse within and across disciplines? Will you follow community-endorsed interoperability best practices? Which ones?</li>
+<li>In case it is unavoidable that you use uncommon or generate project specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies? Will you openly publish the generated ontologies or vocabularies to allow reusing, refining or extending them?</li>
+<li>Will your data include qualified references to other data (e.g.&nbsp;other data from your project, or datasets from previous research)?</li>
+</ul>
+<blockquote class="blockquote">
+<p>A qualified reference is a cross-reference that explains its intent. For example, X is regulator of Y is a much more qualified reference than X is associated with Y, or X see also Y. The goal therefore is to create as many meaningful links as possible between (meta)data resources to enrich the contextual knowledge about the data. (Source: <a href="https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/)" class="uri">https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/)</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+<p>As data interoperability intersects with data reuse, we explain some of our approach in 2.4.</p>
+<section id="commonly-used-ontologies-vocabularies-and-data-models" class="level3">
+<h3 class="anchored" data-anchor-id="commonly-used-ontologies-vocabularies-and-data-models">2.3.1 Commonly used ontologies, vocabularies, and data models</h3>
+<p>Our datasets follow the vocabularies and definitions of the data model of the Statistical Data and Metadata Exchange (SDMX), i.e., the <code>SDMX 3.0 Technical Specifications. Section 2 Information Model: UML Conceptual Design. Version 3.0</code> which provides the widest possible interoperability with the data products of national statistical agencies and international agencies such as Eurostat or OECD <span class="citation" data-cites="sdmx_information_model_v3">(<a href="#ref-sdmx_information_model_v3" role="doc-biblioref">SDMX 2021</a>)</span>. We will also comply with the W3C’s <code>RDF Data Cube Vocabulary</code>, which applies the datacube and dataset model of SDMX to the word wide web <span class="citation" data-cites="cyganiak_rdf_2014">(<a href="#ref-cyganiak_rdf_2014" role="doc-biblioref">W3C 2014</a>)</span>.</p>
+<p>The combination of SDMX and RDF Data Cube standards ensures that OpenMusic data can be automatically harvested, linked, and reused by Eurostat-compliant systems, the EU Open Data Portal, OpenAIRE and other linked open data repositories, and cultural heritage knowledge graphs such as Wikidata, Europena and the European Collaborative Cloud for Cultural Heritage (ECCCH).</p>
+<section id="property-alignment-between-openmusic-wikibase-and-sdmx-rdf-data-cube" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="property-alignment-between-openmusic-wikibase-and-sdmx-rdf-data-cube">Property alignment between OpenMusic Wikibase and SDMX / RDF Data Cube</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>OpenMusic property</th>
+<th>Function / role</th>
+<th>SDMX equivalent</th>
+<th>RDF Data Cube equivalent</th>
+<th>Example entity / comment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Property:P140">om:P140</a> (“dimension (dataset)”)</td>
+<td>Identifies one axis of observation (e.g., time, sex, education)</td>
+<td><code>sdmx:DimensionProperty</code></td>
+<td><code>qb:DimensionProperty</code></td>
+<td><code>wd:Q456</code> “sex (dimension)”, <code>wd:Q472</code> “time (dimension)”</td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Property:P141">om:P141</a> (“measure (dataset)”)</td>
+<td>Quantitative variable observed</td>
+<td><code>sdmx:MeasureProperty</code></td>
+<td><code>qb:MeasureProperty</code></td>
+<td><code>wd:Q471</code> “persons practising artistic activities (measure)”</td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Property:P142">om:P142</a> (“attribute (dataset)”)</td>
+<td>Qualifying metadata (unit, frequency, status)</td>
+<td><code>sdmx:AttributeProperty</code></td>
+<td><code>qb:AttributeProperty</code></td>
+<td><code>wd:Q469</code> “unit of measure”, <code>wd:Q470</code> “frequency”</td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Property:P146">om:P146</a> (“has code list”)</td>
+<td>Links a dimension or concept to its controlled vocabulary</td>
+<td><code>sdmx:codeList</code></td>
+<td>—</td>
+<td><code>wd:Q463</code> “CL_SEX”</td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Property:P145">om:P145</a> (“publisher”)</td>
+<td>Identifies data provider</td>
+<td><code>sdmx:DataProvider</code></td>
+<td><code>dct:publisher</code></td>
+<td><code>wd:Q449</code> “Eurostat”</td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Property:P95">om:P95</a> (“DOI”)</td>
+<td>Persistent identifier</td>
+<td><code>sdmx:Identifier</code></td>
+<td><code>dct:identifier</code></td>
+<td><code>10.2908/ILC_SCP07</code></td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Property:P130">om:P130</a> (“has access point”)</td>
+<td>Access URL for dataset</td>
+<td>—</td>
+<td><code>dcat:accessURL</code> / <code>schema:url</code></td>
+<td><a href="https://doi.org/10.2908/ILC_SCP07"><code>https://doi.org/10.2908/ILC_SCP07</code></a></td>
+</tr>
+<tr class="even">
+<td><code>prov:wasDerivedFrom</code></td>
+<td>Provenance record</td>
+<td><code>sdmx:source</code></td>
+<td><code>prov:wasDerivedFrom</code></td>
+<td>Original Eurostat dataset source</td>
+</tr>
+<tr class="odd">
+<td><code>cc:license</code></td>
+<td>Rights and licensing</td>
+<td><code>sdmx:DataSetAnnotation</code> (conceptual)</td>
+<td><code>dct:license</code></td>
+<td><code>CC0 1.0 Public Domain Dedication</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="class-alignment-between-openmusic-wikibase-sdmx-and-w3c-rdf-data-cube" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="class-alignment-between-openmusic-wikibase-sdmx-and-w3c-rdf-data-cube">Class alignment between OpenMusic Wikibase, SDMX, and W3C RDF Data Cube</h4>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><h1 id="openmusic-wikibase-class">OpenMusic / Wikibase class</h1>
+<p><a href="https://reprexbase.eu/openmusic/Item:Q285">om:Q285</a> (“data set”)</p></td>
+<td><h1 id="equivalent-sdmx-concept">Equivalent SDMX concept</h1>
+<p><code>sdmx:DataStructureDefinition</code></p></td>
+<td><h1 id="equivalent-w3c-data-cube-w3c-class">Equivalent W3C Data Cube / W3C class</h1>
+<p><code>qb:DataStructureDefinition</code></p></td>
+<td><h1 id="description">Description</h1>
+<p>Defines the structure of dimensions, measures, and attributes within the dataset.</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q446">om:Q446</a> (“Persons practising artistic activities by sex, age, education and frequency”)</td>
+<td><code>sdmx:DataSet</code></td>
+<td><code>qb:DataSet</code></td>
+<td>Represents the Eurostat dataset reconstructed as RDF.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q449">om:Q449</a> (“Eurostat”)</td>
+<td><code>sdmx:DataProvider</code></td>
+<td><code>dct:publisher</code></td>
+<td>Organisation responsible for providing and maintaining the dataset.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q456">om:Q456</a> (“sex (dimension)”)</td>
+<td><code>sdmxdim:SEX</code></td>
+<td><code>qb:DimensionProperty</code></td>
+<td>Dimension variable defining the sex of the observed population.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q467">om:Q467</a> (“geopolitical entity (dimension)”)</td>
+<td><code>sdmxdim:REF_AREA</code></td>
+<td><code>qb:DimensionProperty</code></td>
+<td>Dimension variable defining the geographic area (country or region).</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q472">om:Q472</a> (“time (dataset dimension)”)</td>
+<td><code>sdmxdim:TIME_PERIOD</code></td>
+<td><code>qb:DimensionProperty</code></td>
+<td>Dimension variable defining the reference time period.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q466">om:Q466</a> (“educational attainment (dimension)”)</td>
+<td><code>sdmxdim:EDUCLEVEL</code></td>
+<td><code>qb:DimensionProperty</code></td>
+<td>Dimension representing the highest level of education attained.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q471">om:Q471</a> (“persons practising artistic activities (measure)”)</td>
+<td><code>sdmx:Measure</code></td>
+<td><code>qb:MeasureProperty</code></td>
+<td>Quantitative variable representing the observed value (number or percentage of persons).</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q469">om:Q469</a> (“unit of measure (attribute)”)</td>
+<td><code>sdmx:UNIT_MEASURE</code></td>
+<td><code>qb:AttributeProperty</code></td>
+<td>Attribute specifying the unit of measurement (e.g., percentage of persons).</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q470">om:Q470</a> (“frequency (attribute)”)</td>
+<td><code>sdmxdim:FREQ</code></td>
+<td><code>qb:AttributeProperty</code></td>
+<td>Attribute describing the observation’s reporting frequency (annual, quarterly, etc.).</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q463">om:Q463</a> (“CL_SEX”)</td>
+<td><code>sdmx:CodeList</code></td>
+<td><code>skos:ConceptScheme</code></td>
+<td>Controlled vocabulary providing coded values for the “sex” dimension.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q605">om:Q604</a> net turnover (million euro)</td>
+<td><code>ESTAT:INDIC_SBS(10.0)</code></td>
+<td></td>
+<td></td>
+<td>Eurostat SBS 4.1 indicator</td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q605">om:Q605</a> enterprise number</td>
+<td><code>ESTAT:INDIC_SBS(10.0)</code></td>
+<td></td>
+<td></td>
+<td>Eurostat SBS 4.1 indicator</td>
+</tr>
+<tr class="odd">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q605">om:Q602</a> OpenMusE SBS music-sector flag |</td>
+<td><code>OpenMusE defined</code></td>
+<td></td>
+<td></td>
+<td>D1.2 reference</td>
+</tr>
+<tr class="even">
+<td><a href="https://reprexbase.eu/openmusic/Item:Q605">om:Q601</a> CICERONE music classification flag</td>
+<td><code>OpenMusE defined</code></td>
+<td></td>
+<td></td>
+<td>D1.2 reference</td>
+</tr>
+</tbody>
+</table>
+<p>In WP1 we will use, beyond the SDMX taxonomies and ontologies the new ESCO 2.0 ontology <span class="citation" data-cites="esco_ontology_2_0">(<a href="#ref-esco_ontology_2_0" role="doc-biblioref">De Smedt et al. 2024</a>)</span>.</p>
+<p>These definitions were designed for statistical datasets, and they are directly applicable to our <code>indicator datasets</code>. However, with simplifications, they can also apply to our microdata, except that these datasets contain statistically not yet processed raw data. This means that the microdata datasets will contain the measures and dimensions as grouping variables, which will become the measures and dimensions of the indicator dataset after statistical aggregation.</p>
+<p>In T3.2, we will aim to apply more and more of the DDI Standards, starting with the <code>DDI-Codebook 2.5</code> standard <span class="citation" data-cites="DDI-Codebook_2_5">(<a href="#ref-DDI-Codebook_2_5" role="doc-biblioref">DDI Alliance 2012</a>)</span>. Later versions of this <code>DMP</code> will guide on the introduction of further DDI standards.</p>
+</section>
+</section>
+<section id="qualified-references" class="level3">
+<h3 class="anchored" data-anchor-id="qualified-references">2.3.2 Qualified references</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>This part is basically a rewording of the requirements with the exception of handling the issue of ISWC that needs to be clarified with CISAC.</p>
+</div>
+</div>
+</div>
+<p>If the data set builds on another data set, if additional data sets are needed to complete the data, or if complementary information is stored in a different data set, this needs to be specified. This will be the case in many of our datasets.</p>
+<p>From a data documentation point of view, a scientific link between the data sets needs will be described, and all data sets will be cited with the inclusion of their persistent identifiers.</p>
+<p>This approach will be taken with our indicator datasets, which follow as closely as possible SDMX practices; complex indicators will often use as components of pre-existing datasets disseminated following the SDMX standards.</p>
+</section>
+<section id="data-exchange-and-reuse-across-disciplines" class="level3">
+<h3 class="anchored" data-anchor-id="data-exchange-and-reuse-across-disciplines">2.3.3 Data exchange and reuse across disciplines</h3>
+<p>We mainly foster interdisciplinary reuse of our indicator datasets by applying the cross-domain codebooks for data attributes and dimensions of SDMX, which are precisely designed for cross-domain interoperability.</p>
+</section>
+<section id="data-exchange-in-the-music-sector" class="level3">
+<h3 class="anchored" data-anchor-id="data-exchange-in-the-music-sector">2.3.4 Data exchange in the music sector</h3>
+<p>Not applicable here.</p>
+</section>
+</section>
+<section id="increase-data-reuse" class="level2">
+<h2 class="anchored" data-anchor-id="increase-data-reuse">2.4 Increase data reuse</h2>
+<p>The <code>Open Music Europe</code> project aims to establish a reproducible and interoperable model for <strong>reusable data in the European music and cultural sector</strong>. Because data generation is a core objective of the project—not a secondary activity—our data management strategy combines open science principles with careful handling of intellectual property, privacy, and cultural rights. We apply a <strong>tiered openness model</strong>, ensuring that each dataset and its accompanying metadata are reusable to the maximum extent permitted by law, ethics, and partner agreements.</p>
+<p>Our practices improve both <strong>machine-actionable</strong> and <strong>human</strong> reuse.</p>
+<p><br>
+All data and documentation follow the FAIR principles and the Open Policy Analysis (OPA) Guidelines Level 3, ensuring full reproducibility and transparent provenance.</p>
+<section id="documentation-standards" class="level3">
+<h3 class="anchored" data-anchor-id="documentation-standards">2.4.1 Documentation standards</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>How will you provide documentation needed to validate data analysis and facilitate data reuse (e.g.&nbsp;readme files with information on methodology, codebooks, data cleaning, analyses, variable definitions, units of measurement, etc.)?</li>
+<li>Will the provenance of the data be thoroughly documented using the appropriate standards?</li>
+</ul>
+</div>
+</div>
+<p>All datasets are produced in compliance with the <strong>OPA Guidelines (Level 3)</strong>, which require transparent documentation and open computational workflows.</p>
+<p>Each dataset is accompanied by a <em>README</em> and structured according to the <strong>Standard File Structure (SFS)</strong> used throughout the Consortium. These folders, together with Quarto or R Markdown notebooks, ensure that each data transformation is reproducible.</p>
+<p>Provenance is recorded according to the relevant domain standards:</p>
+<ul>
+<li><p><strong>Statistical data</strong> use SDMX and W3C RDF Data Cube provenance elements (<code>prov:wasDerivedFrom</code>, <code>dct:source</code>);</p></li>
+<li><p><strong>Survey data</strong> follow the DDI standard for variable- and respondent-level documentation;</p></li>
+</ul>
+<p>In the second phase of the project, the deliverable <strong>D5.1 Open Music Observatory</strong> will provide a consolidated, machine-actionable data catalogue (DCAT 2.0), and this <code>DMP</code> will be updated accordingly.</p>
+</section>
+<section id="good-data-semantics" class="level3">
+<h3 class="anchored" data-anchor-id="good-data-semantics">2.4.2 Good data semantics</h3>
+<p>Data are structured so that their format reflects their analytical meaning, making them easy to reuse both by humans and by software systems.</p>
+<p>All tabular data follow the <strong>tidy data principle</strong>, a statistical restatement of Codd’s third normal form.<br>
+The structure conforms to SDMX and RDF Data Cube definitions: columns represent <strong>measures</strong>, <strong>dimensions</strong>, and <strong>attributes</strong>, while each row represents one <strong>observation</strong> (<code>qb:Observation</code>).<br>
+Column names follow a standardised <code>snake_case</code> convention for readability and interoperability.</p>
+<p>Observations and entities are uniquely identified with <strong>persistent identifiers (PIDs)</strong>, typically HTTP URIs resolving to the OpenMusic Wikibase (<a href="https://reprexbase.eu/openmusic/"><code>https://reprexbase.eu/openmusic/</code></a>).<br>
+This ensures semantic and programmatic alignment across linked datasets.</p>
+<p>For visualisations, semantic integrity means using accurate, non-misleading forms of representation.<br>
+For textual and complex documents, it means maintaining a clear structure with summaries, references, and provenance metadata.</p>
+</section>
+<section id="api-access" class="level3">
+<h3 class="anchored" data-anchor-id="api-access">2.4.3 API access</h3>
+<p>We provide various level of API access to the datasets.</p>
+</section>
+<section id="data-licensing" class="level3">
+<h3 class="anchored" data-anchor-id="data-licensing">2.4.4 Data licensing</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Will your data be made freely available in the public domain to permit the widest re-use possible?<br>
+</li>
+<li>Will your data be licensed using standard reuse licences, in line with the obligations set out in the Grant Agreement?<br>
+</li>
+<li>Will the data produced in the project be usable by third parties, in particular after the end of the project?<br>
+</li>
+</ul>
+</div>
+</div>
+<p>Licensing follows a <strong>tiered model</strong> that distinguishes between metadata, open data, and restricted data:</p>
+<ul>
+<li><p><strong>Metadata</strong> — All metadata describing datasets, variables, and provenance are released under <strong>CC0 1.0 Public Domain Dedication</strong>.<br>
+This allows unrestricted reuse, harvesting, and aggregation in catalogues such as Zenodo, OpenAIRE, and the ECCCH data space.</p></li>
+<li><p><strong>Open data</strong> — Aggregated or derived datasets produced by the project (e.g.&nbsp;statistical indicators, anonymised survey summaries, or cultural statistics) are released under <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a>, unless specific partner or source conditions require another licence.<br>
+Each dataset’s licence is declared explicitly in its metadata (<code>dct:license</code>) under the <a href="https://reprexbase.eu/openmusic/Property:P148">om:P148</a> property.</p></li>
+</ul>
+<p>As a general principle, the project applies an “open by default, protected by exception” policy. This ensures compliance with the Horizon Europe open-science obligations while respecting legal and ethical constraints.</p>
+</section>
+<section id="other-data" class="level3">
+<h3 class="anchored" data-anchor-id="other-data">2.4.5 Other data</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Further to the FAIR principles, DMPs should also address research outputs other than data, and should carefully consider aspects related to the allocation of resources, data security and ethical aspects.</p>
+</div>
+</div>
+<p>In addition to datasets, the project produces <strong>software code</strong>, <strong>methodological notebooks</strong>, <strong>documentation</strong>, and <strong>live policy reports</strong>.<br>
+These are versioned and released under appropriate open-source or Creative Commons licences (typically MIT, GPL-3.0, or CC BY 4.0).<br>
+Each output is linked to its underlying dataset and provenance record in the Open Music Observatory catalogue.</p>
+</section>
+</section>
+<section id="quality" class="level2">
+<h2 class="anchored" data-anchor-id="quality">2.5 Quality Assurance</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Describe all relevant data quality assurance processes.</p>
+</div>
+</div>
+<section id="eurostat-indicator-design-principles" class="level3">
+<h3 class="anchored" data-anchor-id="eurostat-indicator-design-principles">2.5.1 Eurostat indicator design principles</h3>
+<p>In our projects, we follow the best practices of key business information, statistical, and evidence-based policy indicator design. In doing so, we would like to find synergies among various recent innovations in statistics and open science. Throughout the project, we will follow the Eurostat guidelines on creating new indicators <span class="citation" data-cites="eurostat_harmonised_indicators_1_2014 eurostat_harmonised_indicators_2_2017 eurostat_harmonised_indicators_3_2017">(<a href="#ref-eurostat_harmonised_indicators_1_2014" role="doc-biblioref">Eurostat 2014</a>, <a href="#ref-eurostat_harmonised_indicators_3_2017" role="doc-biblioref">2017</a>; <a href="#ref-eurostat_harmonised_indicators_2_2017" role="doc-biblioref">Kotzeva et al. 2017</a>)</span>, which will ensure broad consensus forming among stakeholders around the objectives and methodology of the improved measurements.</p>
+</section>
+<section id="reproducible-research" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-research">Reproducible research</h3>
+<p>We follow the principles of reproducible research, which increases data quality by using open algorithms, provisioning complete data (lifecycle) history, unit testing, and facilitating both internal and external review and audit. Most of our analysis, hypothesises, software code used for data processing, and the data itself is open. Our critical software elements in the data-to-policy pipeline are regularly peer-reviewed on <em>The Comprehensive R Archive Network</em>, and we send from time-to-time their methodologies for independent scientific peer review.</p>
+</section>
+<section id="internal-peer-review" class="level3">
+<h3 class="anchored" data-anchor-id="internal-peer-review">Internal peer review</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Internal peer review short description
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Just add here a few words.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="allocation-of-resources-not-applicable-on-dataset-level" class="level1">
+<h1>3. Allocation of resources (NOT APPLICABLE ON DATASET LEVEL)</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What will the costs be for making data or other research outputs FAIR in your project (e.g.&nbsp;direct and indirect costs related to How will these be covered? Note that costs related to research data/output management are eligible as part of the Horizon Europe</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Who will be responsible for data management in your project?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>How will long term preservation be ensured? Discuss the necessary resources to accomplish this (costs and potential value)</p>
+</div>
+</div>
+<p>Zenodo is hosted by CERN, which has existed since 1954 and currently has an experimental programme defined for the next 20+ years. CERN is a memory institution for High Energy Physics and is renowned for its pioneering work in Open Access. Organisationally, Zenodo is embedded in the IT Department, Collaboration Devices and Applications Group, Digital Repositories Section (IT-CDA-DR).</p>
+</section>
+<section id="data-security" class="level1">
+<h1>4. Data security</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>What provisions are or will be in place for data security (including data recovery as well as secure storage/archiving and transfer of sensitive data)?</li>
+</ul>
+<!-- -->
+<ul>
+<li>Will the data be safely stored in trusted repositories for long term preservation and curation?</li>
+</ul>
+</div>
+</div>
+<p>The final, processed data will be synchronized between GitHub and Zenodo, or a permanent, long-term repository monthly. Our datasets are periodically updated on Zenodo (under a versioned DOI) which is planned to operate at least for the next 20+ years. Zenodo itself is funded by OpenAIRE and offers continuous integration with GitHub.</p>
+</section>
+<section id="ethics" class="level1">
+<h1>5. Ethics</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Are there, or could there be, any ethics or legal issues that can have an impact on data sharing? These can also be discussed in the context of the ethics review. If relevant, include references to ethics deliverables and ethics chapter in the Description of the Action (DoA).</li>
+<li>Will informed consent for data sharing and long term preservation be included in questionnaires dealing with personal data?</li>
+</ul>
+</div>
+</div>
+<p>Consortium members and their subcontractors will be involved in creating survey metadata datasets and follow the ICC/ESOMAR International Code on Market, Opinion and Social Research and Data Analytics sets the standard of ethical and professional conduct for the global data, research and insights community. Furthermore, Consortium members, when conducting fieldwork for surveys (directly or via subcontractors), must comply with GDPR and carry out a <em>Data protection impact assessment</em> when defined necessary by the regulation.</p>
+<p>In the case of personal surveys, the rules of GDPR and ICC/ESOMAR will be used to prevent the leakage of personal data into the survey microdata sets, which will be available for analysis. In the next processing step, indicator datasets will be created, which are statistically aggregated from a significant number of responses so that they cannot be disaggregated to guess, estimate, or predict individual personal data.</p>
+<p>In the case of enterprise surveys, the survey is designed in a way that applies only to legal persons. In this case, the provisions similar to the <em>2019/1700 EU Regulation on establishing a common framework for European statistics relating to persons and households, based on data at individual level collected from samples</em>, considering, of course, the difference that we do not apply the rules as a statistical authority and have a different legal basis for data collection.</p>
+</section>
+<section id="data-catalogue" class="level1 unnumbered">
+<h1 class="unnumbered">Data Catalogue</h1>
+<p>DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogues published on the Web. This document defines the schema and provides examples for its use.</p>
+<p>The data catalogue will contain human-readable tables and machine-readable (DCAT Version 2 standard) format information about the datasets created by `Open Music Europe`. See an example from the standard:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Properties</th>
+<th>Example values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>dct:title</code></td>
+<td>“Open Music Europe Example Dataaset”@en</td>
+</tr>
+<tr class="even">
+<td><code>dcat:keyword</code></td>
+<td>“music”@en, “musique”@fr, “payments”@en</td>
+</tr>
+<tr class="odd">
+<td><code>dct:creator</code></td>
+<td>Jane Doe</td>
+</tr>
+<tr class="even">
+<td><code>dct:isseud</code></td>
+<td>“2021-06-01”^^xsd:date</td>
+</tr>
+<tr class="odd">
+<td><code>dct:temporal</code></td>
+<td><a href="http://reference.data.gov.uk/id/quarter/2006-Q1" class="uri">http://reference.data.gov.uk/id/quarter/2006-Q1</a></td>
+</tr>
+<tr class="even">
+<td><code>dcat:temporalResolution</code></td>
+<td>“P1D”^^xsd:duration</td>
+</tr>
+<tr class="odd">
+<td><code>dct:spatial</code></td>
+<td><a href="http://sws.geonames.org/6695072/" class="uri">http://sws.geonames.org/6695072/</a></td>
+</tr>
+<tr class="even">
+<td><code>dct:publisher</code></td>
+<td>open-music-europe</td>
+</tr>
+<tr class="odd">
+<td><code>dct:language</code></td>
+<td><a href="http://id.loc.gov/vocabulary/iso639-1/en" class="uri">http://id.loc.gov/vocabulary/iso639-1/en</a></td>
+</tr>
+<tr class="even">
+<td>dct:accrualPeriodicity</td>
+<td><a href="http://purl.org/linked-data/sdmx/2009/code#freq-A" class="uri">http://purl.org/linked-data/sdmx/2009/code#freq-A</a></td>
+</tr>
+<tr class="odd">
+<td><code>dcat:distribution</code></td>
+<td>dataset-001-csv</td>
+</tr>
+</tbody>
+</table>
+<p><code>dataset-001</code> <code>a</code> <code>dcat:Dataset</code></p>
+<p>Q600: <em>Structural Business Statistics (OpenMuse)</em> <span class="citation" data-cites="sbs_openmuse_table3">(<a href="#ref-sbs_openmuse_table3" role="doc-biblioref">Martinelli 2025</a>)</span></p>
+</section>
+<section id="references" class="level1">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-opa_guidelines" class="csl-entry" role="listitem">
+BITSS. 2019. <span>“Guidelines for Open Policy Analysis.”</span> Berkeley Initiative for Transparency in the Social Sciences. <a href="http://www.bitss.org/wp-content/uploads/2019/03/OPA-Guidelines.pdf">http://www.bitss.org/wp-content/uploads/2019/03/OPA-Guidelines.pdf</a>.
+</div>
+<div id="ref-datacite_4_4" class="csl-entry" role="listitem">
+DataCite Metadata Working Group. 2021. <span>“<span>DataCite</span> Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. [Version 4.4.].”</span> <span>DataCite e.V.</span> <a href="https://doi.org/10.14454/3w3z-sa82">https://doi.org/10.14454/3w3z-sa82</a>.
+</div>
+<div id="ref-DDI-Codebook_2_5" class="csl-entry" role="listitem">
+DDI Alliance. 2012. <span>“<span>DDI</span>-Codebook 2.5 <span></span> Data Documentation Initiative.”</span> <span>DDI Alliance</span>. <a href="https://ddialliance.org/Specification/DDI-Codebook/2.5/">https://ddialliance.org/Specification/DDI-Codebook/2.5/</a>.
+</div>
+<div id="ref-esco_ontology_2_0" class="csl-entry" role="listitem">
+De Smedt, Johan, Agis Papantoniou, Bernard Vatan, Karel Kremer, Laurent Bégin, Martin Le Vrang, Massimiliano Molinari, Niels Vandekeybus, and Pieter Fannes. 2024. <span>“The ESCO Ontology: European Skills, Competences, Qualifications and Occupations Ontology.”</span> Ontology specification available at <a href="http://data.europa.eu/esco/model/2.0.0" class="uri">http://data.europa.eu/esco/model/2.0.0</a>; European Commission, Directorate-General for Employment, Social Affairs; Inclusion (DG-EMPL). <a href="http://data.europa.eu/esco/model/2.0.0">http://data.europa.eu/esco/model/2.0.0</a>.
+</div>
+<div id="ref-digital_music_observatory_figshare" class="csl-entry" role="listitem">
+Digital Music Observatory. 2021a. <span>“Digital Music Observatory Collection on Figshare.”</span> <span>Digital Music Observatory</span>. <a href="https://figshare.com/account/home#/collections/5784023">https://figshare.com/account/home#/collections/5784023</a>.
+</div>
+<div id="ref-digital_music_observatory_zenodo" class="csl-entry" role="listitem">
+———. 2021b. <span>“Digital Music Observatory Community on Zenodo.”</span> <span>Digital Music Observatory</span>. <a href="https://zenodo.org/communities/music_observatory/">https://zenodo.org/communities/music_observatory/</a>.
+</div>
+<div id="ref-horizon_europe_guide_2023" class="csl-entry" role="listitem">
+European Commission. 2023. <span>“Horizon Europe (<span>HORIZON</span>) Programme Guide. Version 3.0.”</span> <span>European Commission</span>. <a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf">https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf</a>.
+</div>
+<div id="ref-eurostat_harmonised_indicators_1_2014" class="csl-entry" role="listitem">
+Eurostat. 2014. <em>Towards a Harmonised Methodology for Statistical Indicators — Part 1: Indicator Typologies and Terminologies</em>. 2014th ed. Vol. 1. Towards a Harmonised Methodology for Statistical Indicators 1. Luxembourg: <span>Publications Office of the European Union</span>. <a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-14-011">https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-14-011</a>.
+</div>
+<div id="ref-eurostat_harmonised_indicators_3_2017" class="csl-entry" role="listitem">
+———. 2017. <em>Towards a Harmonised Methodology for Statistical Indicators — Part 3: Relevance for Policy Making</em>. 2017th ed. Vol. 3. Towards a Harmonised Methodology for Statistical Indicators 1. Luxembourg: <span>Publications Office of the European Union</span>. <a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-17-007">https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-17-007</a>.
+</div>
+<div id="ref-OPA_guardia_et_al_2020" class="csl-entry" role="listitem">
+Hoces de la Guardia, Fernando, Sean Grant, and Edward Miguel. 2020. <span>“<span class="nocase">A framework for open policy analysis</span>.”</span> <em>Science and Public Policy</em> 48 (2): 154–63. <a href="https://doi.org/10.1093/scipol/scaa067">https://doi.org/10.1093/scipol/scaa067</a>.
+</div>
+<div id="ref-eurostat_harmonised_indicators_2_2017" class="csl-entry" role="listitem">
+Kotzeva, Mariana, Anton Steurer, Nicola Massarelli, and Mariana Popova, eds. 2017. <em>Towards a Harmonised Methodology for Statistical Indicators — Part 2: Communicating Through Indicators</em>. 2017th ed. Vol. 2. Towards a Harmonised Methodology for Statistical Indicators 1. Luxembourg: <span>Publications Office of the European Union</span>. <a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-17-001">https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-17-001</a>.
+</div>
+<div id="ref-sbs_openmuse_table3" class="csl-entry" role="listitem">
+Martinelli, Arianna. 2025. <span>“Structural Business Statistics (OpenMuse).”</span> The Comprehensive R Archive Network. <a href="https://reprexbase.eu/openmusic/Item:Q600">https://reprexbase.eu/openmusic/Item:Q600</a>.
+</div>
+<div id="ref-openaire_horizon_2021" class="csl-entry" role="listitem">
+OpenAire. 2021. <span>“Horizon Europe Data Management Plan Template, Version 1.”</span> <a href="https://www.openaire.eu/images/Guides/HORIZON_EUROPE_Data-Management-Plan-Template.pdf">https://www.openaire.eu/images/Guides/HORIZON_EUROPE_Data-Management-Plan-Template.pdf</a>.
+</div>
+<div id="ref-sdmx_information_model_v3" class="csl-entry" role="listitem">
+SDMX. 2021. <span>“<span>SDMX</span> 3.0 Technical Specifications. Section 2 Information Model: <span>UML</span> Conceptual Design. Version 3.0.”</span> Statistical Data; Metadata <span>eXchange</span>. <a href="https://sdmx.org/wp-content/uploads/SDMX_3-0-0_SECTION_2_FINAL-1_0.pdf">https://sdmx.org/wp-content/uploads/SDMX_3-0-0_SECTION_2_FINAL-1_0.pdf</a>.
+</div>
+<div id="ref-cyganiak_rdf_2014" class="csl-entry" role="listitem">
+W3C. 2014. <span>“<span>RDF</span> Data Cube Vocabulary.”</span> Edited by Richard Cyganiak and Dave Reynolds. W3C. <a href="https://www.w3.org/TR/vocab-data-cube/">https://www.w3.org/TR/vocab-data-cube/</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
