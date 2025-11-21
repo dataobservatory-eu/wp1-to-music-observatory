@@ -1,0 +1,91 @@
+
+@article{alter_provenance_2020,
+	title = {Provenance metadata for statistical data:  An introduction to Structured Data Transformation Language ({SDTL})},
+	volume = {44},
+	url = {https://iassistquarterly.com/index.php/iassist/article/view/983},
+	doi = {10.29173/iq983},
+	number = {4},
+	journaltitle = {{IQ}},
+	author = {Alter, George and Donakowski, Darrell and Gager, Jack and Heus, Pascal and Hunter, Carson and Ionescu, Sanda and Iverson, Jeremy and Jagadish, H.V. and Lagoze, Carl and Lyle, Jared and Mueller, Alexander and Revheim, Sigbjørn and Richardson, Matthew A. and Ørnulf, Risnes and Seelam, Karunakara and Smith, Dan and Smith, Tom and Song, Jie and Vaidya, Yashas Jaydeep and Voldsater, Ole},
+	urldate = {2022-01-21},
+	date = {2020-12-18},
+	note = {Section: Articles},
+}
+
+@misc{dublin_core_dcmi_2020,
+	title = {{DCMI} Metadata Terms},
+	url = {http://dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/},
+	abstract = {This document is an up-to-date specification of all metadata terms maintained by the Dublin Core Metadata Initiative, including properties, vocabulary encoding schemes, syntax encoding schemes, and classes.},
+	author = {Dublin Core},
+	urldate = {2022-07-02},
+	date = {2020-01-20},
+	keywords = {Metadata, Dublin Core},
+}
+
+@book{pomerantz_metadata_2015,
+	location = {Cambridge, {MA}, {USA}},
+	title = {Metadata},
+	isbn = {978-0-262-52851-1},
+	series = {The {MIT} Press Essential Knowledge series},
+	abstract = {Everything we need to know about metadata, the usually invisible infrastructure for information with which we interact every day.},
+	pagetotal = {256},
+	publisher = {{MIT} Press},
+	author = {Pomerantz, Jeffrey},
+	date = {2015-11-06},
+	langid = {english},
+}
+
+@misc{datacite_4_4,
+	title = {{DataCite} Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. [Version 4.4.]},
+	url = {https://support.datacite.org/docs/datacite-metadata-schema-44},
+	abstract = {https://support.datacite.org/docs/datacite-metadata-schema-44},
+	publisher = {{DataCite e.V.}},
+	author = {{DataCite Metadata Working Group}},
+	urldate = {2022-07-02},
+	date = {2021},
+	doi = {10.14454/3w3z-sa82},
+	keywords = {{DataCite}, Metadta},
+}
+
+@misc{isrc_handbook_2021,
+	title = {International Standard Recording Code ({ISRC}) Handbook. 4th Edition.},
+	url = {https://www.ifpi.org/wp-content/uploads/2021/02/ISRC_Handbook.pdf},
+	publisher = {International {ISRC} Registration Authority},
+	author = {International {ISRC} Registration Authority},
+	date = {2021},
+}
+
+@misc{ISWC,
+	title = {International Standard Musical Work Code ({ISWC}). {ISO} 15707:2022},
+	url = {https://www.iso.org/standard/83125.html},
+	shorttitle = {{ISO} 15707},
+	version = {2022},
+	pagetotal = {8},
+	number = {15707},
+	author = {{ISO}},
+	urldate = {2023-05-14},
+	date = {2022-12},
+	year = 2022,
+	langid = {english}
+}
+
+@misc{ISRC,
+	title = {International Standard Recording Code ({ISRC}. {ISO} 3901:2019},
+	url = {https://www.iso.org/standard/64817.html},
+	shorttitle = {{ISO} 3901},
+	version = {2019},
+	author = {{ISO}},
+	urldate = {2023-05-14},
+	date = {2019-02},
+	year = 2019,
+	langid = {english}
+}
+
+@misc{datacite_ev_datacite_2021,
+	title = {{DataCite} to Dublin Core Mapping 4.4},
+	url = {https://doi.org/10.14454/qn00-qx85},
+	publisher = {{DataCite} e.V.},
+	author = {{DataCite} e.V.},
+	date = {2021},
+	langid = {english},
+}
