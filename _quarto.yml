@@ -1,0 +1,49 @@
+project:
+  type: website
+  
+author:
+  - name: "Antal, Dániel"
+    orcid: 0000-0001-7513-6760
+
+website:
+  title: "OpenMusE Structural Business Statistics"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+  pdf:
+    toc: true
+    toc-depth: 3
+    output-dir: docs
+  docx:
+    toc: true
+    toc-depth: 3
+    output-dir: docs
+
+editor: visual
+
+date: "2025-11-03"
+
+bibliography:
+  - bib/capsurveys.bib
+  - bib/d12.bib
+  - bib/datamodels.bib
+  - bib/indicators.bib
+  - bib/metadata.bib
+  - bib/openmusicrepositories.bib
+  - bib/openscience.bib
+  - bib/openpolicy.bib
+  - bib/ontologies.bib
+  - bib/OpenMusE.bib
+  - bib/opendata.bib
+  - bib/statreg.bib
+  - bib/statisticalmethodology.bib

@@ -13,6 +13,8 @@ The [wp1-to-music-observatory](https://github.com/dataobservatory-eu/wp1-to-musi
 
 - The `R` folder contains R scripts to produce the data tables.
 
+- The `docx` folder contains a template document for Word converstion with the OpenMusE logos.
+
 ## Bibliography
 
 -  `bib/d12.bib` contains the bibliographical information of datasets documented in D1.2
